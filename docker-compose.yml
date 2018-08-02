@@ -1,0 +1,202 @@
+version: "2"
+services:
+  activity:
+    build:
+      context: .
+      dockerfile: activity/Dockerfile
+    restart: always
+    volumes:
+    - .:/go/src/om-kit
+    container_name: activity
+    ports:
+    - 8806:8081
+  attendance:
+    build:
+      context: .
+      dockerfile: attendance/Dockerfile
+    restart: always
+    volumes:
+    - .:/go/src/om-kit
+    container_name: attendance
+    ports:
+    - 8800:8081
+  courseware:
+    build:
+      context: .
+      dockerfile: courseware/Dockerfile
+    restart: always
+    volumes:
+    - .:/go/src/om-kit
+    container_name: courseware
+    ports:
+    - 8811:8081
+  education:
+    build:
+      context: .
+      dockerfile: education/Dockerfile
+    restart: always
+    volumes:
+    - .:/go/src/om-kit
+    container_name: education
+    ports:
+    - 8808:8081
+  food:
+    build:
+      context: .
+      dockerfile: food/Dockerfile
+    restart: always
+    volumes:
+    - .:/go/src/om-kit
+    container_name: food
+    ports:
+    - 8814:8081
+  group:
+    build:
+      context: .
+      dockerfile: group/Dockerfile
+    restart: always
+    volumes:
+    - .:/go/src/om-kit
+    container_name: group
+    ports:
+    - 8805:8081
+  healthy:
+    build:
+      context: .
+      dockerfile: healthy/Dockerfile
+    restart: always
+    volumes:
+    - .:/go/src/om-kit
+    container_name: healthy
+    ports:
+    - 8803:8081
+  kindergarten:
+    build:
+      context: .
+      dockerfile: kindergarten/Dockerfile
+    restart: always
+    volumes:
+    - .:/go/src/om-kit
+    container_name: kindergarten
+    ports:
+    - 8809:8081
+  material:
+    build:
+      context: .
+      dockerfile: material/Dockerfile
+    restart: always
+    volumes:
+    - .:/go/src/om-kit
+    container_name: material
+    ports:
+    - 8819:8081
+  material_pack:
+    build:
+      context: .
+      dockerfile: material_pack/Dockerfile
+    restart: always
+    volumes:
+    - .:/go/src/om-kit
+    container_name: material_pack
+    ports:
+    - 8807:8081
+  mqtt:
+    build:
+      context: .
+      dockerfile: mqtt/Dockerfile
+    restart: always
+    volumes:
+    - .:/go/src/om-kit
+    container_name: mqtt
+    ports:
+    - 8818:8081
+  msg:
+    build:
+      context: .
+      dockerfile: msg/Dockerfile
+    restart: always
+    volumes:
+    - .:/go/src/om-kit
+    container_name: msg
+    ports:
+    - 8804:8081
+  oms:
+    build:
+      context: .
+      dockerfile: oms/Dockerfile
+    restart: always
+    volumes:
+    - .:/go/src/om-kit
+    container_name: oms
+    ports:
+    - 8801:8081
+  onemore:
+    build:
+      context: .
+      dockerfile: onemore/Dockerfile
+    restart: always
+    volumes:
+    - .:/go/src/om-kit
+    container_name: onemore
+    ports:
+    - 8812:8081
+  queue:
+    build:
+      context: .
+      dockerfile: queue/Dockerfile
+    restart: always
+    volumes:
+    - .:/go/src/om-kit
+    container_name: queue
+    ports:
+    - 8815:8081
+  report:
+    build:
+      context: .
+      dockerfile: report/Dockerfile
+    restart: always
+    volumes:
+    - .:/go/src/om-kit
+    container_name: report
+    ports:
+    - 8816:8081
+  seedling:
+    build:
+      context: .
+      dockerfile: seedling/Dockerfile
+    restart: always
+    volumes:
+    - .:/go/src/om-kit
+    container_name: seedling
+    ports:
+    - 8817:8081
+  user:
+    build:
+      context: .
+      dockerfile: user/Dockerfile
+    restart: always
+    volumes:
+    - .:/go/src/om-kit
+    container_name: user
+    ports:
+    - 8810:8081
+  video:
+    build:
+      context: .
+      dockerfile: video/Dockerfile
+    restart: always
+    volumes:
+    - .:/go/src/om-kit
+    container_name: video
+    ports:
+    - 8802:8081
+  work:
+    build:
+      context: .
+      dockerfile: work/Dockerfile
+    restart: always
+    volumes:
+    - .:/go/src/om-kit
+    container_name: work
+    ports:
+    - 8813:8081
